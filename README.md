@@ -17,6 +17,7 @@ Responsive and styled with CSS
 Alerts for validation and success messages
 
 📂 Project Structure
+
 ├── login.html        # Login Page  
 ├── registration.html # Registration Page (not uploaded but referenced)  
 ├── welcome.html      # Welcome Page (not uploaded but referenced)  
