@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Registration Page</title>
+</head>
+<body>
+    <div class="container">
+        <h2 id="text"></h2>
+        <button onclick="logout()">Log Out</button>
+    </div>
+<script>
+
+    const loggedInUser = localStorage.getItem("loggedInUsername");
+
+    if(!loggedInUser){
+        window.location.href = "login.html";
+    }else{
+        document.getElementById("text").innerText = "Welcome "+loggedInUser+" you Logged in Successfully!!";
+    }
+
+    function logout(){
+    window.location.href = "login.html";
+}
+</script>
+</body>
+</html>
